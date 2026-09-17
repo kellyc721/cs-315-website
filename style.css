@@ -81,6 +81,7 @@ nav {
     border-radius: 25px;
 
     overflow: hidden;
+    object-fit: cover;
 }
 
 .image-box img {
@@ -179,18 +180,6 @@ nav {
 }
 
 .drama-list li::before {
-    content: "▻ ";
+    content: "▷ ";
     color: #d99ab5;
-}
-
-#dramaButton {
-    display: block;
-    margin: 35px auto 10px;
-}
-
-#dramaResult {
-    text-align: center;
-    font-weight: bold;
-    color: #9f6681;
-    font-size: 1.1rem;
 }
