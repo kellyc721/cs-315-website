@@ -179,7 +179,7 @@ nav {
 }
 
 .drama-list li::before {
-    content: "♡ ";
+    content: "▻ ";
     color: #d99ab5;
 }
 
