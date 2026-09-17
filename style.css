@@ -1,0 +1,196 @@
+/* General styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fffafc;
+    color: #4d3d45;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: #fff;
+    border-bottom: 1px solid #f2dce5;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #6b5660;
+}
+
+.nav-links a:hover {
+    color: #f39ca6;
+}
+
+/* Sections */
+
+.section {
+    padding: 80px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    color: #9f6681;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+
+/* About */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.image-box {
+    width: 300px;
+    height: 350px;
+
+    flex-shrink: 0;
+
+    background-color: #f5dce6;
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+
+
+/* Interests */
+
+.pink-section {
+    background-color: #fff0f5;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(150, 100, 120, 0.08);
+
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.emoji {
+    font-size: 2rem;
+}
+
+.card h3 {
+    color: #9f6681;
+    margin: 10px 0;
+}
+
+
+/* KDrama */
+
+.section-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: -20px auto 40px;
+}
+
+.drama-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    max-width: 800px;
+    margin: auto;
+}
+
+.drama-list {
+    width: 300px;
+
+    background-color: #faf2ff;
+
+    padding: 30px;
+
+    border-radius: 20px;
+}
+
+.drama-list h3 {
+    color: #9f6681;
+    margin-bottom: 15px;
+}
+
+.drama-list ul {
+    list-style: none;
+}
+
+.drama-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eadceb;
+}
+
+.drama-list li::before {
+    content: "♡ ";
+    color: #d99ab5;
+}
+
+#dramaButton {
+    display: block;
+    margin: 35px auto 10px;
+}
+
+#dramaResult {
+    text-align: center;
+    font-weight: bold;
+    color: #9f6681;
+    font-size: 1.1rem;
+}
